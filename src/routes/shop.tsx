@@ -23,12 +23,12 @@ import {
 import { NGN } from "@/lib/format";
 
 type ShopSearch = {
-  q?: string;
-  category?: string;
-  brand?: string;
-  availability?: string;
-  sort?: string;
-  max?: number;
+  q?: string | undefined;
+  category?: string | undefined;
+  brand?: string | undefined;
+  availability?: string | undefined;
+  sort?: string | undefined;
+  max?: number | undefined;
 };
 
 export const Route = createFileRoute("/shop")({
