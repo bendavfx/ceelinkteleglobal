@@ -37,10 +37,10 @@ const asStringArray = (value: unknown): string[] =>
 
 const normalize = (row: Record<string, unknown>): Product => ({
   ...(row as unknown as Product),
-  price: Number(row.price),
-  previous_price: row.previous_price == null ? null : Number(row.previous_price),
-  specifications: asStringArray(row.specifications),
-  gallery: asStringArray(row.gallery),
+  price: Number(row["price"]),
+  previous_price: row["previous_price"] == null ? null : Number(row["previous_price"]),
+  specifications: asStringArray(row["specifications"]),
+  gallery: asStringArray(row["gallery"]),
 });
 
 export const AVAILABILITY_LABEL: Record<Availability, string> = {
