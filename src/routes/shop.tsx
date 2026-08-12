@@ -87,7 +87,7 @@ function ShopPage() {
 
   const setSearch = (patch: Partial<ShopSearch>) => {
     setVisible(PAGE_SIZE);
-    navigate({ search: (prev) => ({ ...prev, ...patch }) });
+    navigate({ search: (prev: ShopSearch) => ({ ...prev, ...patch }) });
   };
 
   const categoryId = categories.find((c) => c.slug === search.category)?.id;
