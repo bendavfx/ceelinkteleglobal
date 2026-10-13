@@ -15,6 +15,13 @@
       "when": 1791854667179,
       "tag": "0001_admin_store_settings_and_role_access",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1791854731866,
+      "tag": "0002_product_media_access_policies",
+      "breakpoints": true
     }
   ]
 }
