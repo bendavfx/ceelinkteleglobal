@@ -229,6 +229,27 @@ export type Database = {
           },
         ]
       }
+      store_settings: {
+        Row: {
+          id: number
+          owner_email: string | null
+          updated_at: string
+          whatsapp_number: string | null
+        }
+        Insert: {
+          id?: number
+          owner_email?: string | null
+          updated_at?: string
+          whatsapp_number?: string | null
+        }
+        Update: {
+          id?: number
+          owner_email?: string | null
+          updated_at?: string
+          whatsapp_number?: string | null
+        }
+        Relationships: []
+      }
       user_roles: {
         Row: {
           created_at: string
