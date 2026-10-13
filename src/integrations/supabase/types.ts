@@ -47,6 +47,99 @@ export type Database = {
         }
         Relationships: []
       }
+      order_status_history: {
+        Row: {
+          changed_at: string
+          changed_by: string | null
+          id: string
+          order_id: string
+          status: Database["public"]["Enums"]["order_status"]
+        }
+        Insert: {
+          changed_at?: string
+          changed_by?: string | null
+          id?: string
+          order_id: string
+          status: Database["public"]["Enums"]["order_status"]
+        }
+        Update: {
+          changed_at?: string
+          changed_by?: string | null
+          id?: string
+          order_id?: string
+          status?: Database["public"]["Enums"]["order_status"]
+        }
+        Relationships: []
+      }
+      orders: {
+        Row: {
+          address: string | null
+          city: string | null
+          created_at: string
+          customer_email: string
+          customer_name: string
+          customer_phone: string
+          delivery_instructions: string | null
+          email_notification_error: string | null
+          email_notification_status: string
+          fulfillment: Database["public"]["Enums"]["order_fulfillment"]
+          id: string
+          idempotency_key: string
+          items: Json
+          landmark: string | null
+          order_ref: string
+          pickup_notes: string | null
+          state: string | null
+          status: Database["public"]["Enums"]["order_status"]
+          subtotal: number
+          updated_at: string
+        }
+        Insert: {
+          address?: string | null
+          city?: string | null
+          created_at?: string
+          customer_email: string
+          customer_name: string
+          customer_phone: string
+          delivery_instructions?: string | null
+          email_notification_error?: string | null
+          email_notification_status?: string
+          fulfillment: Database["public"]["Enums"]["order_fulfillment"]
+          id?: string
+          idempotency_key: string
+          items: Json
+          landmark?: string | null
+          order_ref: string
+          pickup_notes?: string | null
+          state?: string | null
+          status?: Database["public"]["Enums"]["order_status"]
+          subtotal: number
+          updated_at?: string
+        }
+        Update: {
+          address?: string | null
+          city?: string | null
+          created_at?: string
+          customer_email?: string
+          customer_name?: string
+          customer_phone?: string
+          delivery_instructions?: string | null
+          email_notification_error?: string | null
+          email_notification_status?: string
+          fulfillment?: Database["public"]["Enums"]["order_fulfillment"]
+          id?: string
+          idempotency_key?: string
+          items?: Json
+          landmark?: string | null
+          order_ref?: string
+          pickup_notes?: string | null
+          state?: string | null
+          status?: Database["public"]["Enums"]["order_status"]
+          subtotal?: number
+          updated_at?: string
+        }
+        Relationships: []
+      }
       products: {
         Row: {
           availability: Database["public"]["Enums"]["availability_status"]
@@ -59,14 +152,19 @@ export type Database = {
           id: string
           image_url: string | null
           is_featured: boolean
+          model: string | null
           name: string
           previous_price: number | null
           price: number
           short_description: string | null
+          sku: string | null
           slug: string
           specifications: Json
           stock: number
+          subcategory: string | null
           updated_at: string
+          variant: string | null
+          video_urls: Json
           warranty: string | null
         }
         Insert: {
@@ -80,14 +178,19 @@ export type Database = {
           id?: string
           image_url?: string | null
           is_featured?: boolean
+          model?: string | null
           name: string
           previous_price?: number | null
           price: number
           short_description?: string | null
+          sku?: string | null
           slug: string
           specifications?: Json
           stock?: number
+          subcategory?: string | null
           updated_at?: string
+          variant?: string | null
+          video_urls?: Json
           warranty?: string | null
         }
         Update: {
@@ -101,14 +204,19 @@ export type Database = {
           id?: string
           image_url?: string | null
           is_featured?: boolean
+          model?: string | null
           name?: string
           previous_price?: number | null
           price?: number
           short_description?: string | null
+          sku?: string | null
           slug?: string
           specifications?: Json
           stock?: number
+          subcategory?: string | null
           updated_at?: string
+          variant?: string | null
+          video_urls?: Json
           warranty?: string | null
         }
         Relationships: [
@@ -162,6 +270,16 @@ export type Database = {
         | "sold_out"
         | "out_of_stock"
         | "preorder"
+      order_fulfillment: "delivery" | "pickup"
+      order_status:
+        | "new_request"
+        | "contacted"
+        | "awaiting_payment"
+        | "paid"
+        | "processing"
+        | "dispatched"
+        | "completed"
+        | "cancelled"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -295,6 +413,17 @@ export const Constants = {
         "sold_out",
         "out_of_stock",
         "preorder",
+      ],
+      order_fulfillment: ["delivery", "pickup"],
+      order_status: [
+        "new_request",
+        "contacted",
+        "awaiting_payment",
+        "paid",
+        "processing",
+        "dispatched",
+        "completed",
+        "cancelled",
       ],
     },
   },
