@@ -28,13 +28,13 @@ export const submitOrder = createServerFn({ method: 'POST' })
       p_customer_email: data.customerEmail,
       p_customer_phone: data.customerPhone,
       p_fulfillment: data.fulfillment,
-      p_state: data.state,
-      p_city: data.city,
-      p_address: data.address,
-      p_landmark: data.landmark,
-      p_delivery_instructions: data.deliveryInstructions,
-      p_pickup_notes: data.pickupNotes,
-      p_items: data.items as Database['public']['Functions']['create_customer_order']['Args']['p_items'],
+      ...(data.state ? { p_state: data.state } : {}),
+      ...(data.city ? { p_city: data.city } : {}),
+      ...(data.address ? { p_address: data.address } : {}),
+      ...(data.landmark ? { p_landmark: data.landmark } : {}),
+      ...(data.deliveryInstructions ? { p_delivery_instructions: data.deliveryInstructions } : {}),
+      ...(data.pickupNotes ? { p_pickup_notes: data.pickupNotes } : {}),
+      p_items: data.items as NonNullable<Database['public']['Functions']['create_customer_order']['Args']['p_items']>,
     });
     if (error || !result || typeof result !== 'object' || Array.isArray(result)) {
       console.error('[orders] Order submission failed', error?.code ?? 'no_result');

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const SHOP_LINKS = [
   { to: "/shop", label: "All products" },
@@ -29,11 +29,10 @@ export function Footer() {
             <span className="grid size-9 place-items-center rounded-md bg-brand font-display text-sm font-bold text-brand-foreground">
               TG
             </span>
-            <span className="font-display text-base font-bold">TRIPPLE GADGETS</span>
+            <span className="font-display text-base font-bold">CEELINKSTELEGLOBAL</span>
           </div>
           <p className="max-w-xs text-sm text-ink-muted">
-            Verified laptops, phones and wearables for Nigeria. Every device is inspected and
-            described exactly as it is.
+            {"WE BUY • WE SELL • WE SWAP!"}
           </p>
         </div>
 
@@ -66,18 +65,7 @@ export function Footer() {
         <div>
           <h2 className="eyebrow text-brand">Reach us</h2>
           <ul className="mt-4 space-y-3 text-sm text-ink-muted">
-            <li className="flex items-start gap-2">
-              <Phone className="mt-0.5 size-4 shrink-0 text-brand" />
-              <a href="tel:+2349034142029" className="hover:text-brand">
-                0903 414 2029
-              </a>
-            </li>
-            <li className="flex items-start gap-2">
-              <Mail className="mt-0.5 size-4 shrink-0 text-brand" />
-              <a href="mailto:hello@tripplegadgets.ng" className="hover:text-brand">
-                hello@tripplegadgets.ng
-              </a>
-            </li>
+            <li className="flex items-start gap-2"><Mail className="mt-0.5 size-4 shrink-0 text-brand" /><Link to="/contact" className="hover:text-brand">Contact the store</Link></li>
             <li className="flex items-start gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0 text-brand" />
               Lagos, Nigeria
@@ -88,8 +76,8 @@ export function Footer() {
 
       <div className="border-t border-sidebar-border">
         <div className="container-page flex flex-col gap-2 py-5 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Tripple Gadgets. All rights reserved.</p>
-          <p>Prices in Nigerian Naira (₦). Secure payments coming with Paystack.</p>
+          <p>© {new Date().getFullYear()} CEELINKSTELEGLOBAL. All rights reserved.</p>
+          <p>Prices in Nigerian Naira (₦). Order requests are confirmed by the seller.</p>
         </div>
       </div>
     </footer>

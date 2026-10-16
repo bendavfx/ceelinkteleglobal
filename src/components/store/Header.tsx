@@ -23,10 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
       <div className="bg-ink text-ink-foreground">
         <div className="container-page flex h-9 items-center justify-between text-xs">
-          <p>Nationwide delivery across Nigeria · Pay on delivery in Lagos</p>
-          <a href="tel:+2349034142029" className="hidden hover:text-brand sm:block">
-            0903 414 2029
-          </a>
+          <p>WE BUY • WE SELL • WE SWAP!</p>
         </div>
       </div>
 
@@ -56,12 +53,12 @@ export function Header() {
 
         <Link to="/" className="flex items-center gap-2">
           <span className="grid size-9 place-items-center rounded-md bg-ink font-display text-sm font-bold text-brand">
-            TG
+            CTG
           </span>
           <span className="font-display text-base leading-none font-bold tracking-tight">
-            TRIPPLE
+            CEELINKS
             <span className="block text-[11px] font-semibold tracking-[0.2em] text-muted-foreground">
-              GADGETS
+              TELEGLOBAL
             </span>
           </span>
         </Link>
