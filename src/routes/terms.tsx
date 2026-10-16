@@ -5,13 +5,13 @@ import { PolicyPage } from "@/components/store/PolicyPage";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — Tripple Gadgets" },
+      { title: "Terms & Conditions — CEELINKSTELEGLOBAL" },
       {
         name: "description",
         content:
-          "The terms that apply when you buy from Tripple Gadgets: pricing, availability, warranty, pre-orders and liability.",
+          "The terms that apply when you buy from CEELINKSTELEGLOBAL: pricing, availability, warranty, pre-orders and liability.",
       },
-      { property: "og:title", content: "Terms & conditions — Tripple Gadgets" },
+      { property: "og:title", content: "Terms & conditions — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "Pricing, availability, warranty and pre-order terms.",
@@ -26,7 +26,7 @@ function TermsPage() {
     <PolicyPage
       eyebrow="Legal"
       title="Terms & conditions"
-      intro="By placing an order with Tripple Gadgets you agree to the terms below."
+      intro="By placing an order with CEELINKSTELEGLOBAL you agree to the terms below."
       sections={[
         {
           heading: "Pricing",
@@ -77,7 +77,7 @@ function TermsPage() {
           heading: "Contact",
           body: (
             <p>
-              Questions about these terms? Email hello@tripplegadgets.ng or message 0903 414 2029.
+              Questions about these terms? Email [store owner email not configured] or message [WhatsApp number not configured].
             </p>
           ),
         },

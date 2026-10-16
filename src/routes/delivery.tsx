@@ -5,13 +5,13 @@ import { PolicyPage } from "@/components/store/PolicyPage";
 export const Route = createFileRoute("/delivery")({
   head: () => ({
     meta: [
-      { title: "Delivery Information — Tripple Gadgets Nigeria" },
+      { title: "Delivery Information — CEELINKSTELEGLOBAL Nigeria" },
       {
         name: "description",
         content:
           "Delivery timelines and fees for Lagos and nationwide orders, plus how pay-on-delivery and dispatch tracking work.",
       },
-      { property: "og:title", content: "Delivery information — Tripple Gadgets" },
+      { property: "og:title", content: "Delivery information — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "Lagos in 24 hours, nationwide in 1–3 working days.",

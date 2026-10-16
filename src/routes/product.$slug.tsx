@@ -24,17 +24,17 @@ export const Route = createFileRoute("/product/$slug")({
   head: ({ loaderData }) => {
     if (!loaderData) {
       return {
-        meta: [{ title: "Product unavailable — Tripple Gadgets" }, { name: "robots", content: "noindex" }],
+        meta: [{ title: "Product unavailable — CEELINKSTELEGLOBAL" }, { name: "robots", content: "noindex" }],
       };
     }
     const { product } = loaderData;
     const description =
-      product.short_description ?? `${product.name} available at Tripple Gadgets Nigeria.`;
+      product.short_description ?? `${product.name} available at CEELINKSTELEGLOBAL Nigeria.`;
     return {
       meta: [
-        { title: `${product.name} — ${NGN(product.price)} | Tripple Gadgets` },
+        { title: `${product.name} — ${NGN(product.price)} | CEELINKSTELEGLOBAL` },
         { name: "description", content: description },
-        { property: "og:title", content: `${product.name} — Tripple Gadgets` },
+        { property: "og:title", content: `${product.name} — CEELINKSTELEGLOBAL` },
         { property: "og:description", content: description },
       ],
     };
@@ -193,7 +193,7 @@ function ProductPage() {
 
             <Button variant="secondary" className="w-full" asChild>
               <a
-                href={whatsappLink(`Hello Tripple Gadgets, I'm interested in: ${product.name}`)}
+                href={whatsappLink(`Hello CEELINKSTELEGLOBAL, I'm interested in: ${product.name}`)}
                 target="_blank"
                 rel="noreferrer"
               >

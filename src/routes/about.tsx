@@ -6,13 +6,13 @@ import { Button } from "@/components/ui/button";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Tripple Gadgets — Trusted Gadget Store in Nigeria" },
+      { title: "About CEELINKSTELEGLOBAL — Trusted Gadget Store in Nigeria" },
       {
         name: "description",
         content:
-          "Tripple Gadgets sells verified laptops, phones and wearables across Nigeria with honest condition reports and nationwide delivery.",
+          "CEELINKSTELEGLOBAL sells verified laptops, phones and wearables across Nigeria with honest condition reports and nationwide delivery.",
       },
-      { property: "og:title", content: "About Tripple Gadgets" },
+      { property: "og:title", content: "About CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "Verified devices, honest condition reports, nationwide delivery in Nigeria.",
@@ -54,7 +54,7 @@ function AboutPage() {
           Gadgets you can trust, priced in Naira
         </h1>
         <p className="mt-4 text-lg text-muted-foreground">
-          Tripple Gadgets started as a small counter selling business laptops to students and
+          CEELINKSTELEGLOBAL started as a small counter selling business laptops to students and
           freelancers in Lagos. Today we supply premium laptops, iPhones and wearables to customers
           in every state — with the same rule we began with: describe the device exactly as it is.
         </p>

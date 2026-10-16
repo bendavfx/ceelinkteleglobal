@@ -12,13 +12,13 @@ import { whatsappLink } from "@/lib/format";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Tripple Gadgets — WhatsApp, Call or Visit" },
+      { title: "Contact CEELINKSTELEGLOBAL — WhatsApp, Call or Visit" },
       {
         name: "description",
         content:
-          "Reach Tripple Gadgets on WhatsApp at 0903 414 2029, call us, email hello@tripplegadgets.ng or visit our Lagos store.",
+          "Reach CEELINKSTELEGLOBAL on WhatsApp at [WhatsApp number not configured], call us, email [store owner email not configured] or visit our Lagos store.",
       },
-      { property: "og:title", content: "Contact Tripple Gadgets" },
+      { property: "og:title", content: "Contact CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "WhatsApp, call, email or visit our Lagos store — we reply fast.",
@@ -39,7 +39,7 @@ function ContactPage() {
       return;
     }
     window.open(
-      whatsappLink(`Hello Tripple Gadgets, my name is ${name || "a customer"}. ${message}`),
+      whatsappLink(`Hello CEELINKSTELEGLOBAL, my name is ${name || "a customer"}. ${message}`),
       "_blank",
       "noreferrer",
     );
@@ -93,19 +93,19 @@ function ContactPage() {
             <ul className="mt-4 space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 size-4 shrink-0 text-brand" />
-                <a href="tel:+2349034142029" className="hover:text-brand">
-                  0903 414 2029
+                <a href="tel:+" className="hover:text-brand">
+                  [WhatsApp number not configured]
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="mt-0.5 size-4 shrink-0 text-brand" />
-                <a href="mailto:hello@tripplegadgets.ng" className="hover:text-brand">
-                  hello@tripplegadgets.ng
+                <a href="mailto:[store owner email not configured]" className="hover:text-brand">
+                  [store owner email not configured]
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-brand" />
-                Computer Village, Ikeja, Lagos, Nigeria
+                Contact the store to confirm its location.
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="mt-0.5 size-4 shrink-0 text-brand" />
