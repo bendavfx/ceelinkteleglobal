@@ -80,13 +80,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Tripple Gadgets — Laptops, Phones & Watches in Nigeria" },
+      { title: "CEELINKSTELEGLOBAL — We Buy, We Sell, We Swap" },
       {
         name: "description",
         content:
-          "Buy verified laptops, iPhones and Apple Watches in Nigeria. Honest specs, fair Naira prices, nationwide delivery.",
+          "Shop phones, laptops, accessories and other devices from CEELINKSTELEGLOBAL. We buy, we sell, we swap.",
       },
-      { name: "author", content: "Tripple Gadgets" },
+      { name: "author", content: "CEELINKSTELEGLOBAL" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

@@ -11,13 +11,13 @@ export const Route = createFileRoute("/deals")({
   },
   head: () => ({
     meta: [
-      { title: "Gadget Deals & Price Drops — Tripple Gadgets Nigeria" },
+      { title: "Gadget Deals & Price Drops — CEELINKSTELEGLOBAL Nigeria" },
       {
         name: "description",
         content:
-          "Current price drops on laptops, phones and smartwatches at Tripple Gadgets. Limited units, real discounts, Naira prices.",
+          "Current price drops on laptops, phones and smartwatches at CEELINKSTELEGLOBAL. Limited units, real discounts, Naira prices.",
       },
-      { property: "og:title", content: "Deals & price drops — Tripple Gadgets" },
+      { property: "og:title", content: "Deals & price drops — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "Discounted laptops, phones and watches while stock lasts.",

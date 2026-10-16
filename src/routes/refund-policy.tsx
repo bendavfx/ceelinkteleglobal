@@ -5,13 +5,13 @@ import { PolicyPage } from "@/components/store/PolicyPage";
 export const Route = createFileRoute("/refund-policy")({
   head: () => ({
     meta: [
-      { title: "Refund & Return Policy — Tripple Gadgets" },
+      { title: "Refund & Return Policy — CEELINKSTELEGLOBAL" },
       {
         name: "description",
         content:
-          "How returns, refunds and device swaps work at Tripple Gadgets, including our 7-day fault window and what is not covered.",
+          "How returns, refunds and device swaps work at CEELINKSTELEGLOBAL, including our 7-day fault window and what is not covered.",
       },
-      { property: "og:title", content: "Refund & return policy — Tripple Gadgets" },
+      { property: "og:title", content: "Refund & return policy — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "7-day fault window, clear swap rules and refund timelines.",
@@ -69,7 +69,7 @@ function RefundPolicyPage() {
           heading: "How to start a return",
           body: (
             <p>
-              Message 0903 414 2029 with your order details and the issue. Keep the original
+              Message [WhatsApp number not configured] with your order details and the issue. Keep the original
               packaging and accessories until the return is resolved.
             </p>
           ),

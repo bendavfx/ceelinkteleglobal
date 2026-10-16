@@ -51,13 +51,13 @@ export const Route = createFileRoute("/shop")({
   },
   head: () => ({
     meta: [
-      { title: "Shop All Gadgets — Tripple Gadgets Nigeria" },
+      { title: "Shop All Gadgets — CEELINKSTELEGLOBAL Nigeria" },
       {
         name: "description",
         content:
           "Browse every laptop, phone and smartwatch in stock. Filter by category, brand, price and availability, all priced in Naira.",
       },
-      { property: "og:title", content: "Shop all gadgets — Tripple Gadgets" },
+      { property: "og:title", content: "Shop all gadgets — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "Filter laptops, phones and watches by brand, price and availability.",

@@ -5,13 +5,13 @@ import { PolicyPage } from "@/components/store/PolicyPage";
 export const Route = createFileRoute("/privacy-policy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy — Tripple Gadgets" },
+      { title: "Privacy Policy — CEELINKSTELEGLOBAL" },
       {
         name: "description",
         content:
-          "What personal data Tripple Gadgets collects, how we use it for orders and delivery, and the choices you have over your information.",
+          "What personal data CEELINKSTELEGLOBAL collects, how we use it for orders and delivery, and the choices you have over your information.",
       },
-      { property: "og:title", content: "Privacy policy — Tripple Gadgets" },
+      { property: "og:title", content: "Privacy policy — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "How we collect, use and protect your personal information.",
@@ -51,7 +51,7 @@ function PrivacyPolicyPage() {
           body: (
             <p>
               Card payments are processed by our payment provider. Full card details never reach our
-              servers and are not stored by Tripple Gadgets.
+              servers and are not stored by CEELINKSTELEGLOBAL.
             </p>
           ),
         },
@@ -69,7 +69,7 @@ function PrivacyPolicyPage() {
           body: (
             <p>
               You can request a copy of your data or ask us to delete it by emailing
-              hello@tripplegadgets.ng. We respond within 7 working days.
+              [store owner email not configured]. We respond within 7 working days.
             </p>
           ),
         },

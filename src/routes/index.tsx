@@ -18,16 +18,16 @@ export const Route = createFileRoute("/")({
   },
   head: () => ({
     meta: [
-      { title: "Tripple Gadgets — Verified Laptops, Phones & Watches in Nigeria" },
+      { title: "CEELINKSTELEGLOBAL — We Buy, We Sell, We Swap" },
       {
         name: "description",
         content:
-          "Shop MacBooks, HP EliteBooks, iPhones and Apple Watches in Naira. Honest specifications, tested devices and nationwide delivery in Nigeria.",
+          "Browse current phones, laptops, accessories and more at CEELINKSTELEGLOBAL, priced in Nigerian naira.",
       },
-      { property: "og:title", content: "Tripple Gadgets — Premium gadgets, honest prices" },
+      { property: "og:title", content: "CEELINKSTELEGLOBAL — We Buy, We Sell, We Swap" },
       {
         property: "og:description",
-        content: "Verified laptops, phones and smartwatches with nationwide delivery in Nigeria.",
+        content: "Shop current gadgets and devices from CEELINKSTELEGLOBAL.",
       },
     ],
   }),
@@ -39,26 +39,6 @@ const TRUST = [
   { icon: Truck, title: "Nationwide delivery", copy: "Lagos same-day where possible, 1–3 days elsewhere." },
   { icon: ShieldCheck, title: "No hidden specs", copy: "Lock status and condition stated on every listing." },
   { icon: Headphones, title: "Real support", copy: "Talk to a human on WhatsApp before and after you buy." },
-];
-
-const REVIEWS = [
-  {
-    name: "Chidera N.",
-    location: "Lekki, Lagos",
-    quote:
-      "Bought the EliteBook for my team. It arrived the same day and the specs were exactly as listed.",
-  },
-  {
-    name: "Yusuf A.",
-    location: "Abuja",
-    quote:
-      "They told me upfront that the iPhone was locked. That honesty is why I'll buy again.",
-  },
-  {
-    name: "Tolu B.",
-    location: "Ibadan",
-    quote: "The MacBook Pro is a beast and the price beat every other seller I checked.",
-  },
 ];
 
 function HomePage() {
@@ -78,15 +58,10 @@ function HomePage() {
       <section className="bg-ink text-ink-foreground">
         <div className="container-page grid items-center gap-10 py-14 md:grid-cols-2 md:py-20">
           <div className="space-y-6">
-            <p className="eyebrow text-brand">Nigeria's gadget plug</p>
-            <h1 className="text-4xl leading-[1.05] font-bold sm:text-5xl">
-              Premium devices,
-              <br />
-              described honestly.
-            </h1>
+            <p className="eyebrow text-brand">CEELINKSTELEGLOBAL</p>
+            <h1 className="text-4xl leading-[1.05] font-bold sm:text-5xl">WE BUY • WE SELL • WE SWAP!</h1>
             <p className="max-w-md text-base text-ink-muted">
-              MacBooks, business laptops, iPhones and Apple Watches — inspected, priced in Naira and
-              delivered anywhere in Nigeria. From {NGN(cheapest)}.
+              Explore the devices currently listed in our store, with prices shown in Nigerian naira.
             </p>
             <div className="flex flex-wrap gap-3">
               <Button size="lg" asChild>
@@ -116,7 +91,7 @@ function HomePage() {
             <div className="overflow-hidden rounded-xl border border-sidebar-border">
               <img
                 src={heroAsset.url}
-                alt="MacBook Pro 16-inch available at Tripple Gadgets"
+                alt="MacBook Pro 16-inch available at CEELINKSTELEGLOBAL"
                 className="aspect-4/3 w-full object-cover"
               />
             </div>
@@ -208,40 +183,13 @@ function HomePage() {
         </section>
       ) : null}
 
-      <section className="container-page pb-14">
-        <p className="eyebrow text-brand">Customers</p>
-        <h2 className="mt-1 text-2xl font-bold">What buyers say</h2>
-        <div className="mt-6 grid gap-5 md:grid-cols-3">
-          {REVIEWS.map((review) => (
-            <blockquote
-              key={review.name}
-              className="rounded-lg border border-border bg-card p-6 shadow-card"
-            >
-              <p className="text-sm leading-relaxed">“{review.quote}”</p>
-              <footer className="mt-4 text-xs text-muted-foreground">
-                <span className="font-semibold text-foreground">{review.name}</span> ·{" "}
-                {review.location}
-              </footer>
-            </blockquote>
-          ))}
-        </div>
-      </section>
-
       <section className="container-page pb-4">
         <div className="rounded-xl border border-border bg-card p-6 md:flex md:items-center md:justify-between md:p-10">
           <div>
-            <h2 className="text-xl font-bold">Get new stock alerts first</h2>
-            <p className="mt-2 text-sm text-muted-foreground">
-              Drop your email and we'll tell you when fresh devices land.
-            </p>
+            <p className="eyebrow text-brand">CEELINKSTELEGLOBAL</p>
+            <h2 className="mt-2 text-xl font-bold">WE BUY • WE SELL • WE SWAP!</h2>
           </div>
-          <form
-            className="mt-5 flex gap-2 md:mt-0 md:w-96"
-            onSubmit={(event) => event.preventDefault()}
-          >
-            <Input type="email" required placeholder="you@email.com" aria-label="Email address" />
-            <Button type="submit">Notify me</Button>
-          </form>
+          <Button className="mt-5 md:mt-0" asChild><Link to="/contact">Get in touch</Link></Button>
         </div>
       </section>
     </>

@@ -13,13 +13,13 @@ export const Route = createFileRoute("/categories")({
   },
   head: () => ({
     meta: [
-      { title: "Gadget Categories — Laptops, Phones & Watches | Tripple Gadgets" },
+      { title: "Gadget Categories — Laptops, Phones & Watches | CEELINKSTELEGLOBAL" },
       {
         name: "description",
         content:
-          "Explore Tripple Gadgets by category: business laptops, MacBooks, iPhones, Apple Watches and everyday accessories.",
+          "Explore CEELINKSTELEGLOBAL by category: business laptops, MacBooks, iPhones, Apple Watches and everyday accessories.",
       },
-      { property: "og:title", content: "Shop by category — Tripple Gadgets" },
+      { property: "og:title", content: "Shop by category — CEELINKSTELEGLOBAL" },
       {
         property: "og:description",
         content: "Laptops, phones, smartwatches and accessories, all priced in Naira.",
